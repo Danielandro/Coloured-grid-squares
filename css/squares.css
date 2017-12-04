@@ -1,0 +1,31 @@
+h1{
+	text-align: center;
+	margin: 30px auto;
+}
+
+.container{
+	border: 5px solid black;
+	height: 600px;
+	width: 600px;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+
+.grid{
+  display: inline-block;
+  background-color: #1C86EE;
+ /* height: 4em;*/
+  /*width: auto;*/
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header{
+	text-align: center;
+}
+
+#clearButton{
+	margin: 30px auto;
+}
