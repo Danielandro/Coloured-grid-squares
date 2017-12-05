@@ -6,6 +6,9 @@ This is one of the JavaScript/jQuery projects from [The Odin Project](https://ww
 You’re going to build a browser version of something between a sketchpad and an Etch-A-Sketch.<br>
 The key is to break it down into little manageable steps and then figure out how to solve each step in turn.
 
+**[Click here](https://danielandro.github.io/Coloured-grid-squares/) to view the completed project**
+
+
 ## Assignment
 
 
