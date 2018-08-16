@@ -2,21 +2,22 @@ var container = document.querySelector('.container'); // grab container div
 var button = document.getElementById('clearButton'); // grab the button
 
 function addDiv(divCount) {
-
-    var setDimensions = (600 / divCount) - 2; // calculate grid cell dimensions
+    var setDimensions = (600 / (Math.round(divCount + 'e2') + 'e-2') - 2).toFixed(2);
+    // var setDimensions = (600 / divCount) - 2; // calculate grid cell dimensions
     var numberOfGrids = Math.pow(divCount, 2); // calculate number of grid cells
 
     while (numberOfGrids > 0) {
         var newDiv = document.createElement('div'); // create new div 	
         container.appendChild(newDiv); // append as child of container div
         newDiv.classList.add('grid'); // add '.grid' class to new div
-        newDiv.style.height = setDimensions; // set grid cell height 
-        newDiv.style.width = setDimensions; // set grid cell width 
+        newDiv.style.height = setDimensions + 'px'; // set grid cell height 
+        newDiv.style.width = setDimensions + 'px'; // set grid cell width 
         newDiv.style.border = '1px solid black'; // adds border to grid cell        
         numberOfGrids--; // iterate loop downwards
     }
     var gridCells = document.querySelectorAll('.grid'); // grab all grid cells
     gridCells.forEach(cell => cell.addEventListener('mouseenter', changeColor)); // adds mouse enter listener to each grid cell, change colour
+    console.log(setDimensions);
     console.log('Grid has been created!!')
 }
 

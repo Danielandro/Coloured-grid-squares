@@ -1,6 +1,12 @@
+body {
+	background-color: #fed766;
+	font-family: 'Baloo Bhai', cursive;
+}
+
 h1{
 	text-align: center;
-	margin: 30px auto;
+	margin: 30px 20px auto;
+	text-transform: uppercase;
 }
 
 .container{
@@ -8,9 +14,9 @@ h1{
 	height: 600px;
 	width: 600px;
 	margin: 0 auto;
-	padding: 0px;
+	padding: 0px;	
+	background-color: black;
 }
-
 
 .grid{
   display: inline-block;
@@ -19,13 +25,22 @@ h1{
   /*width: auto;*/
   border: none;
   margin: 0px;
-  padding: 0px;
+  padding: 0px;  
+  box-sizing: content-box;	
 }
 
-.header{
+#header{
 	text-align: center;
 }
 
 #clearButton{
 	margin: 30px auto;
+	border-radius: 20px;
+	font-size: 20px;
+	padding: 5px 20px;
+	border: 4px solid black;
+}
+
+#clearButton:visted {
+	border-style: none;
 }
