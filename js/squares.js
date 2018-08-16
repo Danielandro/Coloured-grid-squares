@@ -1,9 +1,8 @@
 var container = document.querySelector('.container'); // grab container div
 var button = document.getElementById('clearButton'); // grab the button
 
-function addDiv(divCount) {
-    var setDimensions = (600 / (Math.round(divCount + 'e2') + 'e-2') - 2).toFixed(2);
-    // var setDimensions = (600 / divCount) - 2; // calculate grid cell dimensions
+function addDiv(divCount) {    
+    var setDimensions = ((600 / divCount) - 2).toFixed(2); // calculate grid cell dimensions
     var numberOfGrids = Math.pow(divCount, 2); // calculate number of grid cells
 
     while (numberOfGrids > 0) {

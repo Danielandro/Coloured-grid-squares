@@ -3,10 +3,23 @@ body {
 	font-family: 'Baloo Bhai', cursive;
 }
 
+#header{
+	text-align: center;
+}
+
 h1{
 	text-align: center;
 	margin: 30px 20px auto;
 	text-transform: uppercase;
+}
+
+#clearButton{	
+	margin: 30px auto;
+	border-radius: 20px;
+	font-size: 20px;
+	padding: 5px 20px;
+	border: 4px solid black;
+	outline: none;
 }
 
 .container{
@@ -20,27 +33,14 @@ h1{
 
 .grid{
   display: inline-block;
-  background-color: #1C86EE;
- /* height: 4em;*/
-  /*width: auto;*/
+  background-color: #1C86EE; 
   border: none;
   margin: 0px;
   padding: 0px;  
   box-sizing: content-box;	
 }
 
-#header{
-	text-align: center;
-}
 
-#clearButton{
-	margin: 30px auto;
-	border-radius: 20px;
-	font-size: 20px;
-	padding: 5px 20px;
-	border: 4px solid black;
-}
 
-#clearButton:visted {
-	border-style: none;
-}
+
+
